@@ -57,11 +57,9 @@ int main(int argc, char* argv[]) {
             if (e.type == SDL_QUIT) {
                 quit = true;
             }
-            // Other input handling can go here
             inputManager->Update(e);
         }
 
-        // Update your game's state here
         SDL_FillRect(screenSurface, nullptr, SDL_MapRGB(screenSurface->format, 0xFF, 0xFF, 0xFF));
         SDL_UpdateWindowSurface(window);
     }
